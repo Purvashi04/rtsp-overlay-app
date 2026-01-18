@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RTSP Overlay App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>RTSP Overlay Application</h2>
+
+<input type="text" id="rtspUrl" placeholder="Enter RTSP URL">
+<button onclick="loadStream()">Play</button>
+
+<br><br>
+
+<video id="video" width="700" controls></video>
+
+<br><br>
+
+<input type="text" id="overlayText" placeholder="Enter overlay text">
+<button onclick="addOverlay()">Add Overlay</button>
+
+<div id="overlayContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
